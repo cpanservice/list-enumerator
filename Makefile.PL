@@ -1,4 +1,4 @@
-use inc::Module::Install;
+use inc::Module::Install 0.92; #0.92 has support for better ppd/OS package generation
 name 'List-Enumerator';
 all_from 'lib/List/Enumerator.pm';
 
@@ -16,4 +16,5 @@ test_requires 'Test::Exception';
 
 use_test_base;
 auto_include;
+repository 'http://github.com/cho45/list-enumerator';
 WriteAll;
